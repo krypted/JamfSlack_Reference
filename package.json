@@ -1,0 +1,29 @@
+{
+  "name": "stock-market",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "logger": "0.0.1",
+    "moment-timezone": "^0.5.27",
+    "mysql2": "^1.7.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "rollbar": "^2.13.0",
+    "sequelize": "^5.19.6",
+    "slack-node": "^0.1.8",
+    "xml-js": "^1.6.11"
+  }
+}
