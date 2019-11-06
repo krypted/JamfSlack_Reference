@@ -5,24 +5,42 @@ The general steps you'll follow to get this Slack Bot working are as follows:
 2.      Download the code
 3.	Prep node app.js
 4.	Create .env file in root folder
+
 	
-First, let's prep the host. Per the package.json file, the packages you'd need to install (e.g. via npm) include:     
+First, let's prep the host. Per the package.json file, the packages you'd need to install (e.g. via npm) include:  
+
 ⋅⋅* "async": "^3.1.0",
+
 ⋅⋅* "axios": "^0.19.0",
+
 ⋅⋅* "chalk": "^2.4.2",
+
 ⋅⋅* "cheerio": "^1.0.0-rc.3",
+
 ⋅⋅* "dotenv": "^8.1.0",
+
 ⋅⋅* "express": "^4.17.1",
+
 ⋅⋅* "fs": "0.0.1-security",
+
 ⋅⋅* "logger": "0.0.1",
+
 ⋅⋅* "moment-timezone": "^0.5.27",
+
 ⋅⋅* "mysql2": "^1.7.0",
+
 ⋅⋅* "path": "^0.12.7",
+
 ⋅⋅* "request": "^2.88.0",
+
 ⋅⋅* "rollbar": "^2.13.0",
+
 ⋅⋅* "sequelize": "^5.19.6",
+
 ⋅⋅* "slack-node": "^0.1.8",
+
 ⋅⋅* "xml-js": "^1.6.11"
+
 
 Next, download all the files in this project. Then we'll start by editing the .env file in the project. These settings include the following:
 
