@@ -2,7 +2,7 @@
 
 This project is a reference implementation to build a Slack interface to Jamf Pro. It could be used for most any REST endpoint thought. 
 
-##Usage
+## Usage
 
 Basically you send it a /q followed by an endpoint and it spits out json. Syntax is pretty much as follows:
 
@@ -18,7 +18,7 @@ Based on the list of devices, if you wanted to query for device id 8 then run:
 
 To see a full list of endpoints, check out https://developer.jamf.com/apis/classic-api/index.
 
-##Installation
+## Installation
 
 The general steps you'll follow to get this Slack Bot working are as follows:
 
@@ -31,6 +31,8 @@ The general steps you'll follow to get this Slack Bot working are as follows:
 4. Create .env file in root folder
 
 	
+### Dependencies
+
 First, let's prep the host. Per the package.json file, the packages you'd need to install (e.g. via npm) include:  
 
 ⋅⋅* "async": "^3.1.0",
@@ -66,6 +68,8 @@ First, let's prep the host. Per the package.json file, the packages you'd need t
 ⋅⋅* "xml-js": "^1.6.11"
 
 
+### Building the Project
+
 Next, download all the files in this project. Then we'll start by editing the .env file in the project. These settings include the following:
 
 ⋅⋅*PORT = 3000
@@ -82,6 +86,8 @@ Next, download all the files in this project. Then we'll start by editing the .e
 	
 ⋅⋅*API_END_POINT = <replace with the URL to your API, like https://krypted.jamfcloud.com/JSSResource>
 
+
+### Setup In Your Slack Instance
 
 We'll come back here and put in the auth token and server item so no need to know those juuuust yet. Next, we'll create the app in Slack. To do so, browse to https://api.slack.com/apps and click on New Slack App. Provide a name for the app and enter the Development Slack Workspace that you'll be installing the app into. I'd recommend using a development space before promoting to your master Slack instance. Once you've selected the appropriate information, click Create App. 
 
