@@ -1,10 +1,14 @@
 # JamfSlack_Reference
 
 The general steps you'll follow to get this Slack Bot working are as follows:
-1.	Perform dependency installs
-2.      Download the code
-3.	Prep node app.js
-4.	Create .env file in root folder
+
+1. Perform dependency installs
+
+2. Download the code
+
+3. Prep node app.js
+
+4. Create .env file in root folder
 
 	
 First, let's prep the host. Per the package.json file, the packages you'd need to install (e.g. via npm) include:  
@@ -45,12 +49,19 @@ First, let's prep the host. Per the package.json file, the packages you'd need t
 Next, download all the files in this project. Then we'll start by editing the .env file in the project. These settings include the following:
 
 ⋅⋅*PORT = 3000
+
 ⋅⋅*NODE_ENV = development
+
 ⋅⋅*SLACK_AUTH_TOKEN = <this is an auth token that we'll grab later in this readme>
+
 ⋅⋅*POST_SERVER_ITEM_ACCESS_TOKEN = <this is a bot token that we'll grab later in this readme>
+
 ⋅⋅*USERNAME=<replace with the username for your Jamf Pro Server API Account>
+	
 ⋅⋅*PASSWORD=<replace with the password for your API Account>
+	
 ⋅⋅*API_END_POINT = <replace with the URL to your API, like https://krypted.jamfcloud.com/JSSResource>
+
 
 We'll come back here and put in the auth token and server item so no need to know those juuuust yet. Next, we'll create the app in Slack. To do so, browse to https://api.slack.com/apps and click on New Slack App. Provide a name for the app and enter the Development Slack Workspace that you'll be installing the app into. I'd recommend using a development space before promoting to your master Slack instance. Once you've selected the appropriate information, click Create App. 
 
