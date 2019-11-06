@@ -1,5 +1,25 @@
 # JamfSlack_Reference
 
+This project is a reference implementation to build a Slack interface to Jamf Pro. It could be used for most any REST endpoint thought. 
+
+##Usage
+
+Basically you send it a /q followed by an endpoint and it spits out json. Syntax is pretty much as follows:
+
+/q <ENDPOINTNAME> <PARAM>
+	
+As an example, let's say you wanted to query computers for a list of devices, simply enter:
+
+/q computers
+
+Based on the list of devices, if you wanted to query for device id 8 then run:
+
+/q computers 8
+
+To see a full list of endpoints, check out https://developer.jamf.com/apis/classic-api/index.
+
+##Installation
+
 The general steps you'll follow to get this Slack Bot working are as follows:
 
 1. Perform dependency installs
