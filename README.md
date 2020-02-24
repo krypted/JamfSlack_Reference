@@ -96,3 +96,5 @@ Next, let's create the bot user. For this, click on Bot Users in the app sidebar
 Now click Edit Command. This is where we call the app we just uploaded. I use /q as my command (for query) but you can choose to use something else (my initial tests used /askjamf but that was too much typing as I'm kinda' lazy). The bot has been taught to return with a list if there's no parameter provided or informaton about a specific object if there is a param. So you can put that text in there or leave it blank. The Request URL is the most important thing here. That's the URL to the .js app. 
 
 Next, click on "Oauth & Permissions"Here, copy the OAuth Access Token into that SLACK_AUTH_TOKEN field in the .env file and then click Save again. Almost done. Next you'll need the POST_SERVER_ITEM_ACCESS_TOKEN. Per https://docs.rollbar.com/docs/nodejs, that is in your rollbar config. 
+
+Note: This is a reference implementation. There's another project at https://www.taniacomputer.com/jamf-a-slack-app-to-simplify-mac-lookups-and-troubleshooting/ that I'd recommend checking out if you need something ready to put in production.
